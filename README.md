@@ -1,2 +1,2 @@
 All my first programs, learning languages and everything else. 
-My first steps
+Basically my first steps

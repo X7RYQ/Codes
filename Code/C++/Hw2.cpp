@@ -1,4 +1,3 @@
-// Srivishva Melvin Marimouttou, Student ID: sm25017
 // Homework 2 Question : Enter a string from keyboard. If the string has digits then extract all digits from the string and create a natural number.
 // Program created on : 06/10/2025
 #include <iostream>
@@ -23,4 +22,5 @@ int main()
     }
     cout << n;
     return 0;
+
 }

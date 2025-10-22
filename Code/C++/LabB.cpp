@@ -2,55 +2,47 @@
 // Program created on : 20/10/2025
 
 #include <iostream>
-#include <string>
 using namespace std;
 int main()
 {
-    int ok;
+    int ok; // Variable to control the loop for continuing or exiting the program
     do
     {
-        char a;
-        int n;
+        int n;  // Variables to store natural number
+        char a; // Variables to store character
         cout << "Enter a letter from a to h: ";
         cin >> a;
         cout << "Enter a natural number from 1 to 8: ";
         cin >> n;
-        if (a < 'a' || a > 'h')
+        if (a < 'a' || a > 'h') // Input validation for character
         {
-            cout << "Error message: Wrong Letter";
+            cout << "Error message: Wrong Letter" << endl;
         }
-        else if (n < 1 || n > 8)
+        else if (n < 1 || n > 8) // Input validation for natural number
         {
-            cout << "Error message: Wrong Number";
+            cout << "Error message: Wrong Number" << endl;
         }
         else
         {
-            for (int i = 1; i <= 8; i++)
+            for (int i = 8; i >= 1; i--) // Loop to print rows of chessboard
             {
-                for (char j = 'a'; j <= 'h'; j++)
+                for (char j = 'a'; j <= 'h'; j++) // Loop to print columns of chessboard
                 {
-                    if (i == n && j == a)
+                    if (i == n && j == a) // Condition to identify the position of the Queen
                     {
-                        cout << "[" << "Q" << "]";
-                        int num = n;
-                        char let = a;
-                        for (int k = 1; k <= 8; k++)
-                        {
-                            for (char l = 'a'; l <= 'h'; l++)
-                            {
-                                if (k == num - 1 || k == num + 1 || l == let - 'a' || l == let + 'a' || k == num || l == let)
-                                {
-                                    cout << "[" << "X" << "]";
-                                    break;
-                                }
-                            }
-                            cout << endl;
-                        }
-                        break;
+                        cout << "[Q]"; // Print Q for Queen's position
                     }
-                    cout << "[" << " " << "]";
+                    else if ((i == n - 1 && j == a + 1) || (i == n - 1 && j == a - 1) || (i == n + 1 && j == a + 1) || (i == n + 1 && j == a - 1) || i == n || j == a)
+                    {
+                        cout << "[X]";
+                    }
+
+                    else
+                    {
+                        cout << "[ ]"; // Print empty boxes
+                    }
                 }
-                cout << endl;
+                cout << endl; // Move to the next line after printing each row
             }
         }
         cout << "If you would like to continue, enter 1 and to exit, enter any other number." << endl;
@@ -58,4 +50,7 @@ int main()
     } while (ok == 1); // Condition to continue the program
     return 0;
 }
+
+}
+
 

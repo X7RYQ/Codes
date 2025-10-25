@@ -1,0 +1,105 @@
+/* Srivishva Melvin Marimouttou, sm25017 */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+h1 {
+    background-color: cyan;
+    text-align: center;
+    padding: 1%;
+    margin: 1%;
+}
+
+body {
+    background-image: url("https://burst.shopifycdn.com/photos/fog-on-dark-waters-edge.jpg?width=1000&format=pjpg&exif=0&iptc=0");
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+p {
+    font-family: "Playwrite DE SAS", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    padding: 1%;
+    margin: 1%;
+}
+
+label {
+    color: darkred;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+nav {
+    display: inline-block;
+    text-transform: uppercase;
+    width: 25%;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 2%;
+}
+
+h2 {
+    color: deeppink;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.footer-text {
+    text-align: center;
+}
+
+img {
+    display: inline-block;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    margin: 1%;
+    border-width: 10px;
+    border-color: chartreuse;
+    border-style: dotted;
+}
+
+ul {
+    list-style-type: square;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: dashed;
+    border-width: 10px;
+    border-color: blanchedalmond;
+}
+
+thead {
+    background-color: blueviolet;
+}
+
+tbody {
+    background-color: cornflowerblue;
+}
+
+button {
+    background-color: yellow;
+    color: violet;
+    padding: 5px;
+    border-color: brown;
+    border-width: 2px;
+    border-style: groove;
+    border-radius: 5px;
+}
+
+input {
+    background-color: lightsalmon;
+    padding: 5px;
+    border-color: teal;
+}
+
+textarea {
+    background-color: lightyellow;
+    padding: 5px;
+    border-color: olive;
+}

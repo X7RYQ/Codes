@@ -1,4 +1,3 @@
-// Srivishva Melvin, sm25017
 // B20, Given char from a to h and natural number  n =< 8 . Example, a2. Given pair identifies a box in chessboard where Queen is placed. Print on screen the chessboard marked with X those boxes where the Queen can move.
 // Program created on : 20/10/2025
 

@@ -34,7 +34,7 @@ int main()
                     {
                         cout << "[Q]"; // Print Q for Queen's position
                     }
-                    else if (i == n || j == (int(a) - int('a'))) // Condition to identify the positions where the Queen can move
+                    else if (i == n || j == (int(a) - int('a')) || (abs(i - n) == abs(j - (int(a) - int('a'))))) // Condition to identify the positions where the Queen can move
                     {
                         cout << "[X]"; // Print X for positions where the Queen can move
                     }

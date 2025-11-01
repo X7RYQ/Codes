@@ -1,22 +1,21 @@
 #include <iostream>
-using namespace std;
 int main()
 {
-    double n, num;
-    int c = 0, a = -1;
-    cout << "Enter a decimal number: " << endl;
-    cin >> n;
-    while (a != 0)
+    int n;
+    std::cout << "Enter the square size" << std::endl;
+    std::cin >> n;
+    for (int i = 1; i <= n; i++)
     {
-        n = n * 10;
-        c++;
-        num = n % 10;
-        if (num != 0)
+        for (int j = i; j <= n; j++)
         {
-            a = 0;
-            cout << "Answer is " << c << endl;
-            break;
+            std::cout << "X";
+            if (i != 1 || i != n)
+            {
+                std::cout << " ";
+                break;
+            }
         }
+        std::cout << std::endl;
     }
     return 0;
 }
